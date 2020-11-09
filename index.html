@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MOST</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    </head>
+
+    <style type="text/css">
+    html {height: 100%;
+        scroll-behavior: smooth;
+        font-family: 'Noto Sans KR', sans-serif;}
+      body {height: 100%;
+        overflow-x: hidden;
+          padding: 0;
+          margin: 0;}
+      a{text-decoration: none; 
+        color: #000;}
+      ul {list-style: none;}
+      header {position: fixed;
+          
+            width: 100%;
+          }
+
+      .header {width: 100%;
+              height: 90px;
+              margin: 0px auto;
+            background: rgba(238, 182, 147, 0.7);
+              box-sizing: border-box;
+              padding: 0px 0px;
+            display: flex;
+            justify-content: center;
+              border-bottom: 1px solid black;
+
+            }
+      .header .menu { max-width: 800px;
+         display: flex;
+         align-items: center;
+              justify-content: space-between;}
+    
+      .header h1 {font-size: 30px;
+                 font-weight: 700;
+                 position: relative;
+               
+                 
+                }
+      .header  {text-align: center;}
+      .header  ul {display: inline-block;
+                        padding: 0 0 0 0;
+                      }
+
+      .header  li {float: left;
+                  padding: 0 50px;
+                  font-size: 15px;
+                  font-weight: 500;
+                  line-height: 0px;
+                  margin-top: 1px;
+                }
+    
+
+      .bg-a{height: 800px; text-align: center;
+        line-height: 800px; font-size: 3em;
+      }
+      .bg-b{height: 800px; text-align: center;
+        line-height: 800px; font-size: 3em;
+      }
+    
+
+        body.is-touch #banner {
+    background-attachment: scroll;
+  }
+
+  #banner {
+    padding: 16em 0 13em 0;
+    background-attachment: fixed;
+    background-image: url("overlay.png"), url("bg.jpg");
+    background-position: center top;
+    background-size: auto;
+    line-height: 1.75;
+    text-align: center;
+  }
+
+    #banner:last-child {
+      margin-bottom: 0;
+    }
+
+    #banner h2 {
+      color: #eeb693;
+      display: inline-block;
+      font-size: 4.5em;
+      line-height: 1.0;
+      margin-bottom: 0.2em;
+    }
+
+    #banner p {
+      color: #aaa;
+      font-size: 1.5em;
+      margin-bottom: 1.75em;
+      text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 1280px) {
+
+      #banner {
+        padding: 14em 0 11em 0;
+      }
+
+        #banner h2 {
+          font-size: 2.5em;
+        }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+      #banner {
+        padding: 9em 0 7em 0;
+      }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+      #banner {
+        padding: 6em 2em 6em 2em;
+      }
+
+        #banner br {
+          display: none;
+        }
+
+        #banner h2 {
+          font-size: 2.25em;
+        }
+
+        #banner p {
+          font-size: 1.25em;
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+      #banner {
+        padding: 4em 2em 4em 2em;
+      }
+
+    }
+    .button {
+    background-color: #eeb693;
+    border-radius: 4px;
+    color: #000000 !important;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    height: 3.15em;
+    line-height: 3.25em;
+    padding: 0 2.2em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+      .button:hover {
+      background-color: #f2cbb3;
+    }
+
+
+
+.section1 {
+    width: 1500px;
+    margin: 80px auto;
+    box-sizing: border-box;
+    padding: 40px;
+
+    background-color: #433c36;
+}
+
+.section1 .txt_title {
+    font-size: 40px;
+       color: #eeb693;
+}
+.section1 b {
+    font-weight: bold;
+}
+.section1 .txt_sub p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+p {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.section1 .txt_sub {
+    margin-top: 30px;
+    font-size: 18px;
+         color: #fff;
+}
+
+.section1 .bg_img {
+    background: url(1.jpg) no-repeat;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.section1 .txt_1 {
+    position: absolute;
+    width: 18%;
+    height: 600px;
+    padding: 150px 30px;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+
+    .section2 {
+    width: 1500px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 20px;
+
+
+}
+
+.section2:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.section2 .txt_title {
+    font-size: 40px;
+       color: #eeb693;
+}
+.section2 b {
+    font-weight: bold;
+}
+.section2 .txt_sub p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+p {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.section2 .txt_sub {
+    margin-top: 30px;
+    font-size: 18px;
+         color: #fff;
+}
+
+
+.section2 .txt_1 {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 100px 150px;
+    height: 450px;
+
+}
+
+.section2 .img {
+    background: url(2.jpg) no-repeat;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.section2 .img_area {
+    float: left;
+    width: 50%;
+    height: 450px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+    .section3 {
+    width: 1500px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+
+.section3:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.section3 .txt_title {
+    font-size: 40px;
+       color: #433c36;
+}
+.section3 b {
+    font-weight: bold;
+}
+.section3 .txt_sub p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+p {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.section3 .txt_sub {
+    margin-top: 30px;
+    font-size: 18px;
+         color: #fff;
+}
+
+
+.section3 .txt_1 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 100px 150px;
+    height: 450px;
+}
+
+.section3 .img {
+    background: url(3.jpg) no-repeat;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.section3 .img_area {
+    float: right;
+    width: 50%;
+    height: 450px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+
+    .section4 {
+    width: 1500px;
+    margin: 20px auto;
+    box-sizing: border-box; 
+    padding: 20px;
+
+}
+
+.section4:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.section4 .txt_title {
+    font-size: 40px;
+       color: #eeb693;
+}
+.section4 b { 
+    font-weight: bold;
+
+}
+.section4 .txt_sub p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+p {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.section4 .txt_sub {
+    margin-top: 30px;
+    font-size: 18px;
+         color: #fff;
+}
+
+
+.section4 .txt_1 {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 100px 150px;
+    height: 450px;
+}
+
+.section4 .img {
+    background: url(4.jpg) no-repeat;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.section4 .img_area {
+    float: left;
+    width: 50%;
+    height: 450px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.product{padding-top: 120px;
+        padding-bottom: 120px;
+          }
+
+.background2 {
+  background-attachment: fixed;
+    background-image: url("overlay.png"), url("bg_2.jpg");
+    background-position: center top;
+    background-size: auto;
+    min-height: 400px;
+}
+.product h2 {
+    color: #eeb693;
+
+    font-size: 4.5em;
+    line-height: 1.0;
+    margin-bottom: 0.2em;
+    text-align: center;
+    position: center;
+    padding-top: 150px;
+}
+
+
+
+
+
+.section5 {
+    width: 1500px;
+  
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-bottom: 120px;
+}
+
+.section5 b { font-size: 20px;
+    font-weight: bold;
+
+}
+
+.section5 ul {
+    padding: 0;
+}
+.section5 ul {
+    list-style: none;
+}
+
+.sectuon5 ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.section5 ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.section5 li {
+    float: left;
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 315px;
+
+}
+.section5 .img {
+    float: left;
+
+    width: 315px;
+    padding-bottom: 30px;
+    }
+
+
+
+.gif {
+    width: 900px;
+    height: 600px;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 120px;
+
+}
+
+.FAQ{padding-top: 120px;
+        padding-bottom: 120px;
+          }
+
+.background3 {
+  background-attachment: fixed;
+    background-image: url("overlay_2.png"), url("bg_3.jpg");
+    background-position: center top;
+    background-size: auto;
+    min-height: 400px;
+}
+.FAQ h2 {
+    color: #433c36;
+
+    font-size: 4.5em;
+    line-height: 1.0;
+    margin-bottom: 0.2em;
+    text-align: center;
+    position: center;
+    padding-top: 150px;
+}
+
+
+
+.section6 {
+    width: 1500px;
+
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-bottom: 120px;
+}
+
+.section6 li {
+    float: left;
+    margin-left: 10px;
+    margin-right: 100px;
+    width: 580px;
+    text-align: left;
+}
+
+.section6:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.section6 .txt_sub {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 27px;
+}
+.section6 .txt_sub li:before {
+    content: "-";
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+.section6 b { font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+
+}
+
+
+.footer {
+    width: 100%;
+    height: 120px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    border-top: 1px solid lightgray;
+    text-align: center;
+}
+
+.footer .in {
+    width: 1500px;
+    margin: 0px auto;
+    padding: 30px 0px;
+    line-height: 20px;
+ 
+}
+.footer h1{float: left;
+padding-top: 20px;}
+.r_footer{float: left;
+width: 1500px;
+    padding-left: 1000px;
+    padding-right: 30px;
+    line-height: 20px;
+    list-style: none;
+    position: absolute;
+    margin: 21.44px 0px;
+
+     }
+
+
+.footer ul:after {
+    content: "";
+
+    clear: both;
+}
+
+    </style>
+
+  <body>
+   
+   <header>
+        <div class="header">
+          <div class="menu">
+               <ul class="navi1">
+                <li><a href="#1" class="nav1">ABOUT</a></li>
+                <li><a href="#2" class="nav2">BRAND</a></li>
+                </ul>
+          <div class="logo">
+            <h1><a href="index.html">MOST</a></h1>
+          </div>
+          
+
+                <ul class="navi2">
+                <li><a href="#3" class="nav3">PRODUCT</a></li>
+                <li><a href="#4" class="nav4">FAQ</a></li>
+              </ul>
+          </div>
+        </div>
+    </header>
+
+
+      <section id="banner">
+        <h2>MOST AT HOME</h2>
+        <p>카지노의 가장 큰 즐거움을 당신의 집에서 느껴보세요 <br /> 최고의 프리미엄 카지노의 호스트가 되어 보세요.</p>
+        <ul class="actions">
+          <li><a href="#1" class="button special big">둘러보기</a></li>
+        </ul>
+      </section>
+
+      <section class="section1" id="1">
+        <div class="txt_1">
+          <div><b class="txt_title">프리미엄 카지노를</b></div>
+          <div><b class="txt_title">모스트의 제품으로 재현</b></div>
+          <div class="txt_sub">
+            <p>모스트는 여러분이 프리미엄 카지노의 경험을 집에서도</p>
+            <p>경험할 수 있도록, 실제로 국제 규격에 맞는 플레잉 카드를</p>
+            <p>프리미엄 이미지로 디자인 하여 제공 합니다.</p>
+          </div>
+        </div>
+        <div class="bg_img">
+        </div>
+      </section>
+
+
+      <section class="section2" id="2">
+        <div class="img_area">
+          <div class="img"></div>
+        </div>
+        <div class="txt_1">
+          <div><b class="txt_title">MOST</b></div>
+          <div><b class="txt_title">브랜드의 시작.</b></div>
+          <div class="text_sub">
+            <p>저희 모스트 카지노는 포스트 코로나 시대에 맞춰 </p>
+            <p>집에서도 실제 유명 카지노의 경험을 간접적으로 라도</p>
+            <p>느낄 수 있도록, 다양한 연구를 통해 제품을 제작합니다.</p>
+          </div>
+        </div>
+      </section>
+            <section class="section3">
+        <div class="txt_1">
+          <div><b class="txt_title">MOST</b></div>
+          <div><b class="txt_title">브랜드의 경험.</b></div>
+          <div class="text_sub">
+            <p>저희 모스트 카지노에서 제공하고 있는 다양한 경험중 핵심은 </p>
+            <p>카지노에서 실제 사용하는 플레잉카드, 포커칩 등을 제작하여</p>
+            <p>촉감 부터 카지노의 기분을 선사하는데에 있습니다.</p>
+          </div>
+        </div>
+          <div class="img_area">
+          <div class="img"></div>
+        </div>
+      </section>
+
+      <section class="section4" id="2">
+        <div class="img_area">
+          <div class="img"></div>
+        </div>
+        <div class="txt_1">
+          <div><b class="txt_title">MOST</b></div>
+          <div><b class="txt_title">브랜드의 제품.</b></div>
+          <div class="text_sub">
+            <p>저희 모스트 카지노에서 제공하고 있는 다양한 제품중 </p>
+            <p>카지노에서 실제 사용하는 플레잉카드 제작에 집중하여</p>
+            <p>모든 부분에서 카지노의 기분을 선사하는데에 있습니다.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section class="product" id="3">
+  <div class="background2">
+    <div class="bg_img_2">
+       <h2>EXPERIENCE MOST AT HOME</h2>
+      </div>
+  </div>
+</section>
+
+<section class="section5">
+        <ul>
+          <li>
+            <div class="img">
+            <img src="pd_1.jpg">
+            </div>
+            <div><b class="txt_big">version WHITE</b></div>
+            <div class="text_sub">
+              <p>흰색에 모스트의 시그니쳐 색으로 디자인</p>
+              <p>하여 보다 고급스러운 질감으로 연출한 카드</p>
+             
+            </div>
+          </li>
+          <li>
+           <div class="img">
+            <img src="pd_2.jpg">
+            </div>
+            
+            <div><b class="txt_big">version BLACK</b></div>
+            <div class="text_sub">
+              <p>검정색에 모스트의 시그니쳐 색으로 디자인</p>
+              <p>하여 보다 고급스러운 질감으로 연출한 카드</p>
+            </div>
+          </li>
+          <li>
+            <div class="img">
+            <img src="pd_3.jpg">
+            </div>
+            
+            <div><b class="txt_big">version BLACK&WHITE</b></div>
+            <div class="text_sub">
+              <p>흰색 앞면에 검정색 뒷면의 플레잉카드로,</p>
+              <p>가장 익숙한 플레잉 카드의 모습의 디자인</p>
+            </div>
+          </li>
+          <li>
+           <div class="img">
+            <img src="pd_4.jpg">
+            </div>
+            
+            <div><b class="txt_big">MOST ALL SET</b></div>
+            <div class="text_sub">
+              <p>모스트의 모든 플레잉 카드의 디자인을</p>
+              <p>할인된 가격으로 즐길 수 있는 모스트 올 세트</p>
+            </div>
+          </li>
+
+
+        </ul>
+
+      </section>
+
+      <div class="gif">
+            <img src="1.gif">
+            </div>
+
+<section class="FAQ" id="4">
+  <div class="background3">
+    <div class="bg_img_3">
+       <h2>FREQUENTLY ASKED QUESTIONS</h2>
+      </div>
+  </div>
+</section>
+
+<section class="section6">
+        <ul>
+          <li>
+            <div><b class="txt_detail">배송안내</b></div>
+            <div class="txt_sub">
+              <ul>
+                <li>평일 오후 2시까지 주문건에 대해 당일발송 됩니다.
+                <br>재고부족, 물량 수급에 따라 배송 지연 될 수 있습니다.</li>
+                <li>당일발송 되었어도 택배사 지점 물량에 따라 배송이 지연 될 수 있습니다.</li>
+                <li>제품 구매수량에 따라 택배비 추가비용이 청구 될 수 있습니다.</li>
+                <li>제주, 도서 산간지역은 추가 운임이 발생할 수 있습니다.</li>
+                <li>수령자정보 오류 기입으로 인해 상품이 되돌라 올 경우 왕복택배비용이 청구 될 수 있습니다.</li>
+                
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div><b class="txt_detail">취소/교환/반품 안내</b></div>
+            <div class="txt_sub">
+              <ul>
+                <li>주문확인 후 주문취소는 불가합니다.</li>
+                <li>상품이 이상이 있을 경우 사진 첨부 하여 고객센터로 문의 바랍니다.</li>
+                <li>단순변심으로 인한 교환/반품 시 왕복 배송비 5,000원이 청구됩니다.</li>
+                <li>캔,페트 음료일 경우 배송시 약간의 찌그러짐이 있을 수 있으니 양해 부탁드립니다.</li>
+                <li>상품누락/파손/오배송 일 경우 사진첨부하여 고객센터로 문의 주시면 빠른처리 도와드리겠습니다.</li>
+                
+                
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+  <footer>
+      <div class="footer">
+        <div class="in">
+          <a href="#banner" class="button special big">맨위로</a>
+          <ul>
+            <li class="l_footer">
+              <div class="footer_title">
+              <h1>MOST</div></h1>
+              </div>
+          </li>
+           
+            <li class="r_footer">
+                ⓒ 2020 MOST HOME CASINO SET. All rights reserved.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+  </body>
+  </html>
